@@ -1,4 +1,4 @@
-# HardenedStack Multi Container adminment and Monitoring
+# HardenedStack Multi Container Deployment and Monitoring
 
 A hardened Ubuntu host running a multi-container stack Nginx, Flask, MySQL with Prometheus/Node Exporter monitoring, automated health checks,
 and scheduled database backups.
