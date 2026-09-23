@@ -176,6 +176,19 @@ curl http://localhost/
 curl http://localhost/db
 ```
 
+**Connect to the database directly:**
+```bash
+docker exec -it mysql-db mysql -udevops -pdevopspass devopsdb
+```
+> Note: passing the password directly after `-p` is shown here for copy-paste convenience in this demo project, but it's visible in shell history and to other users via `ps aux` while running. In production, use `-p` alone (prompts interactively, nothing logged) or a `~/.my.cnf` credentials file instead.
+
+Once connected:
+```sql
+SHOW DATABASES;
+USE devopsdb;
+SHOW TABLES;
+```
+
 **Basic app status:**
 ```bash
 curl http://localhost/health
