@@ -13,7 +13,7 @@ only reachable from other containers on the `devops-network` bridge network.
 
 ## 1. Prerequisites
 
-- Ubuntu 22.04 LTS VM in VirtualBox (Bridged Adapter — gets its own LAN IP)
+- Ubuntu/Ubuntu Server VM in VirtualBox (Bridged Adapter - gets its own LAN IP)
 - An SSH key pair generated on your **host machine** (not the VM):
   ```powershell
   ssh-keygen -t ed25519 -C "hardenedstack"
